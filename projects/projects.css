@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --clr-cactus: hsla(185, 72%, 22%, 1);
+  --clr-cream: hsla(52, 100%, 91%, 1);
+  --clr-yellow: hsla(45, 100%, 65%, 1);
+  --clr-orange: hsla(37, 69%, 53%, 1);
+  --clr-red: hsla(9, 58%, 46%, 1);
+
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--clr-cactus);
+  font-size: 1.8rem;
+}
+
+.projects-elements {
+  width: 100%;
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+  border: 1px solid black;
+}
+
+.projects figure {
+  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 3rem;
+  background-color: var(--clr-cream);
+  align-items: center;
+  text-align: center;
+}
+
+.projects img {
+  width: 20rem;
+  padding: 2rem;
+  background-color: var(--clr-orange);
+}
+
+.chachi {
+}
+.city-breakers {
+}
+
+.circles {
+}
+
+.wordle {
+}
+
+.atmosphere {
+}
