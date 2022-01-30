@@ -11,6 +11,12 @@
   font-family: "Roboto", sans-serif;
   --ff-libre: "Libre Baskerville", serif;
   --ff-roboto: "Roboto", sans-serif;
+
+  --clr-yellow: hsl(45, 50%, 50%);
+  --clr-cactus: hsl(140, 64%, 15%);
+  --clr-tomato: hsl(22, 82%, 71%);
+  --clr-bone: hsl(0, 0%, 95%);
+  --clr-black: hsl(185, 19%, 13%);
 }
 
 Html {
@@ -18,9 +24,9 @@ Html {
 }
 
 body {
-  background-color: hsla(185, 72%, 22%, 1);
+  background-color: var(--clr-cactus);
   background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png"),
-    radial-gradient(tomato, hsla(185, 72%, 22%, 1));
+    radial-gradient(var(--clr-tomato), var(--clr-cactus));
   width: 100%;
   height: 100vh;
 }
@@ -30,26 +36,19 @@ main {
   height: 80%;
   margin: 10vh auto;
   padding: 4rem;
-  background-color: tomato;
+  background-color: var(--clr-tomato);
   display: grid;
   grid-template-rows: repeat(12, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
+  gap: 2rem;
   font-family: var(--ff-libre);
 }
 
 .hello {
   grid-area: 1/1 / span 9 / span 1;
-  position: relative;
-  overflow: hidden;
-  color: white;
-}
-
-.hello img {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  z-index: 0;
+  background-color: var(--clr-yellow);
+  color: var(--clr-bone);
+  border: var(--clr-black) 1rem solid;
 }
 
 .hello h1 {
@@ -83,23 +82,9 @@ main {
 }
 
 .contact {
-  position: relative;
-  overflow: hidden;
   grid-area: 10/1 / span 3 / span 1;
-  border: white 2px solid;
-}
-
-.contact img {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  bottom: 0;
-  z-index: 0;
-  transition: transform 1s ease;
-}
-
-.contact:hover img {
-  transform: scale(1.2);
+  border: var(--clr-black) 2px solid;
+  background-color: var(--clr-cactus);
 }
 
 .contact a {
@@ -107,13 +92,13 @@ main {
   display: block;
   height: 100%;
   width: 100%;
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 300;
   text-decoration: none;
-  color: white;
+  color: var(--clr-bone);
   z-index: 5;
   text-align: center;
-  padding: 3%;
+  padding: 2.5rem;
 }
 
 .nav {
@@ -124,39 +109,49 @@ main {
 }
 
 .nav div {
-  height: 28%;
+  height: 30%;
   position: relative;
   overflow: hidden;
-  border: white 2px solid;
+  border: var(--clr-black) 2px solid;
 }
 
 .nav img {
-  position: absolute;
   width: 100%;
   height: auto;
+  position: absolute;
   z-index: 0;
   transition: transform 1s ease;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.profile img {
+  top: -10%;
+}
+
+.projects img {
+  top: -50%;
+}
+.skills img {
+  bottom: 0;
 }
 
 .nav div:hover img {
   transform: scale(1.2);
 }
-
 .nav a {
   height: 100%;
   width: 100%;
   display: block;
   z-index: 5;
   position: relative;
-  padding: 9%;
   text-align: center;
   text-decoration: none;
 }
 
 .nav p {
+  padding: 4rem;
+  margin: auto;
   font-size: 3rem;
-  color: white;
+  color: var(--clr-bone);
   font-weight: 400;
-  background-color: hsla(187, 10%, 67%, 0.8);
-  border: 1px white solid;
 }
