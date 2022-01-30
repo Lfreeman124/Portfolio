@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Roboto", sans-serif;
+  --ff-libre: "Libre Baskerville", serif;
+  --ff-roboto: "Roboto", sans-serif;
+}
+
+Html {
+  font-size: 1.8rem;
+}
+
+body {
+  background-color: hsla(185, 72%, 22%, 1);
+  background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png"),
+    radial-gradient(tomato, hsla(185, 72%, 22%, 1));
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  width: 80%;
+  height: 80%;
+  margin: 10vh auto;
+  padding: 4rem;
+  background-color: tomato;
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  font-family: var(--ff-libre);
+}
+
+.hello {
+  grid-area: 1/1 / span 9 / span 1;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.hello img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.hello h1 {
+  margin-left: 1rem;
+  margin-bottom: 4rem;
+  font-size: 10rem;
+  position: relative;
+  z-index: 5;
+  font-family: var(--ff-roboto);
+}
+
+.hello p {
+  position: relative;
+  z-index: 5;
+  margin-left: 1rem;
+}
+.hello h2 {
+  font-size: 3.5rem;
+  position: relative;
+  z-index: 5;
+  margin-left: 1rem;
+}
+.hello h3 {
+  margin-left: 1rem;
+  font-size: 3rem;
+  position: relative;
+  z-index: 5;
+  font-family: var(--ff-roboto);
+  margin-bottom: 0;
+  font-weight: 100;
+}
+
+.contact {
+  position: relative;
+  overflow: hidden;
+  grid-area: 10/1 / span 3 / span 1;
+  border: white 2px solid;
+}
+
+.contact img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  z-index: 0;
+  transition: transform 1s ease;
+}
+
+.contact:hover img {
+  transform: scale(1.2);
+}
+
+.contact a {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-size: 4rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  z-index: 5;
+  text-align: center;
+  padding: 3%;
+}
+
+.nav {
+  grid-area: 1/2 / span 12 / span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav div {
+  height: 28%;
+  position: relative;
+  overflow: hidden;
+  border: white 2px solid;
+}
+
+.nav img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  transition: transform 1s ease;
+}
+
+.nav div:hover img {
+  transform: scale(1.2);
+}
+
+.nav a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  z-index: 5;
+  position: relative;
+  padding: 9%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav p {
+  font-size: 3rem;
+  color: white;
+  font-weight: 400;
+  background-color: hsla(187, 10%, 67%, 0.8);
+  border: 1px white solid;
+}

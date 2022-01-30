@@ -21,14 +21,17 @@ body {
 }
 
 .projects-elements {
+  background-color: var(--clr-cactus);
   width: 100%;
-  display: grid;
-  grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   border: 1px solid black;
 }
 
 .projects figure {
-  border: 1px black solid;
+  border: 1px white solid;
+  width: 35rem;
   display: flex;
   flex-direction: column;
   margin: 2rem;
@@ -40,8 +43,14 @@ body {
 
 .projects img {
   width: 20rem;
-  padding: 2rem;
+  padding: 3rem;
   background-color: var(--clr-orange);
+  margin: 2rem;
+}
+
+figcaption {
+  width: 100%;
+  border-top: 1px var(--clr-cactus) solid;
 }
 
 .chachi {
