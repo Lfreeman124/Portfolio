@@ -41,6 +41,7 @@ nav a {
   background-color: var(--clr-yellow);
   margin-right: 2rem;
   border: 1px solid var(--clr-black);
+  margin-bottom: 0.5rem;
 }
 h1 {
   margin-left: 2rem;
@@ -89,13 +90,6 @@ img {
   border-left: 1px solid var(--clr-black);
   border-right: 1px solid var(--clr-black);
   border-bottom: 1px solid var(--clr-black);
-}
-
-.background {
-  height: 100%;
-  width: 100%;
-  background: radial-gradient(hsla(255, 255%, 255%, 0.3), var(--clr-yellow));
-  z-index: 0;
   padding: 3rem;
 }
 
