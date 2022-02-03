@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --clr-yellow: hsl(45, 50%, 50%);
+  --clr-cactus: hsl(140, 64%, 15%);
+  --clr-tomato: hsl(22, 82%, 71%);
+  --clr-bone: hsl(0, 0%, 95%);
+  --clr-black: hsl(185, 19%, 13%);
+
+  --ff-libre: "Libre Baskerville", Serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-size: 2.5rem;
+  background-color: var(--clr-cactus);
+}
+main {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 2rem;
+  display: grid;
+  grid-template: repeat(40, 1fr) / repeat(40, 1fr);
+}
+
+main p {
+  font-family: var(--ff-libre);
+}
+
+.personal {
+  color: var(--clr-yellow);
+}
+
+.professional {
+  color: var(--clr-tomato);
+}
+
+.tech {
+  color: var(--clr-bone);
+}
