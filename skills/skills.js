@@ -20,7 +20,41 @@ let ids = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p];
 for (let i of ids) {
   let random1 = Math.floor(Math.random() * 40);
   let random2 = Math.floor(Math.random() * 36);
-  i.style.gridArea = `${random1} / ${random2} / ${random1 + 4} / ${
-    random2 + 5
+  let randomColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(
+    Math.random() * 255
+  )}, ${Math.floor(Math.random() * 255)})`;
+  i.style.color = randomColor;
+  i.style.gridArea = `${random1} / ${random2} / ${random1 + 10} / ${
+    random2 + 10
   }`;
+}
+
+const move = (element) => {
+  let random1 = Math.floor(Math.random() * 40);
+  let random2 = Math.floor(Math.random() * 36);
+  element.style.gridArea = `${random1} / ${random2} / ${random1 + 10} / ${
+    random2 + 10
+  }`;
+};
+
+const colorChange = (element) => {
+  let randomColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(
+    Math.random() * 255
+  )}, ${Math.floor(Math.random() * 255)})`;
+  element.style.color = randomColor;
+};
+
+const iterationChange = (element) => {
+  let iteration = 1;
+  element.addEventListener("animationiteration", () => {
+    if (iteration % 2 == 0) {
+      move(element);
+      colorChange(element);
+    }
+    iteration++;
+  });
+};
+
+for (let i of ids) {
+  iterationChange(i);
 }
