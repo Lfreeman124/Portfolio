@@ -33,6 +33,8 @@ main {
   grid-template: repeat(40, 1fr) / repeat(40, 1fr);
   min-height: 0;
   min-width: 0;
+  justify-items: center;
+  align-items: center;
 }
 
 main p {
@@ -84,7 +86,6 @@ main p {
 @keyframes move {
   100% {
     transform: scale(1.5);
-    transform-origin: center top;
   }
   from {
     color: var(--clr-black);
