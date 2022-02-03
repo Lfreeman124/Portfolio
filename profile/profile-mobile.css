@@ -19,13 +19,13 @@
 
 body {
   font-size: 1rem;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   font-family: var(--ff-roboto);
 }
 
 header {
-  height: 10rem;
+  height: 9rem;
 }
 nav {
   margin-top: 1rem;
@@ -60,7 +60,7 @@ main {
 
 .bar {
   background-color: var(--clr-tomato);
-  grid-area: 4 / 3 / 7 / 20;
+  grid-area: 2 / 3 / 5 / 20;
   z-index: 5;
   display: flex;
   justify-content: flex-end;
@@ -69,27 +69,29 @@ main {
 }
 h2 {
   margin: 2rem;
-  width: 55%;
+  width: 30%;
+  text-align: right;
   border-bottom: 1px black solid;
 }
 .photo {
-  grid-area: 3 / 2 / 17 / 9;
+  grid-area: 1 / 2 / 16 / 9;
   background-color: var(--clr-cactus);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 img {
+  margin-top: 25px;
+  margin-left: 30px;
+  grid-area: 3 /4 / 10 / 15;
   padding: 2rem;
-  height: 70%;
-  z-index: 6;
+  height: 200px;
+  position: absolute;
+  z-index: 10;
   border: 2px solid var(--clr-black);
 }
 
 .about {
   background-color: var(--clr-yellow);
-  grid-area: 7 / 10 / 20 / 19;
+  grid-area: 6 / 4 / 18 / 19;
   border-left: 1px solid var(--clr-black);
   border-right: 1px solid var(--clr-black);
   border-bottom: 1px solid var(--clr-black);
@@ -97,8 +99,9 @@ img {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--clr-black);
   z-index: 1;
@@ -106,14 +109,15 @@ h3 {
 
 h4 {
   margin-top: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 400;
   z-index: 1;
 }
 
 .about p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding-left: 2rem;
   font-weight: 300;
   z-index: 1;
+  margin-bottom: 2rem;
 }
