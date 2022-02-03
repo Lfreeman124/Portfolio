@@ -6,14 +6,6 @@
 }
 
 :root {
-  /*
-  --clr-cactus: hsla(185, 72%, 22%, 1);
-  --clr-cream: hsla(52, 100%, 91%, 1);
-  --clr-yellow: hsla(45, 100%, 65%, 1);
-  --clr-orange: hsla(37, 69%, 53%, 1);
-  --clr-red: hsla(9, 58%, 46%, 1);
-  */
-
   --clr-yellow: hsl(45, 50%, 50%);
   --clr-cactus: hsl(140, 64%, 15%);
   --clr-tomato: hsl(22, 82%, 71%);
@@ -39,6 +31,7 @@ header {
 }
 
 h1 {
+  padding-top: 2rem;
   color: var(--clr-tomato);
   font-size: 8rem;
   text-decoration: underline;
@@ -69,6 +62,7 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid var(--clr-cactus);
 }
 
 body {
@@ -76,6 +70,7 @@ body {
 }
 
 .projects-elements {
+  padding: 2rem 5rem;
   background-color: var(--clr-bone);
   width: 100%;
   display: flex;
