@@ -53,7 +53,7 @@ main p {
 
 #a,
 #i {
-  animation: move 2.5s linear infinite alternate backwards;
+  animation: move-more 2.5s linear infinite alternate backwards;
   animation-delay: 1s;
 }
 
@@ -65,8 +65,8 @@ main p {
 
 #e,
 #m {
-  animation: move 1.5s linear infinite alternate backwards;
-  animation-delay: 2s;
+  animation: move-more 1.3s linear infinite alternate backwards;
+  animation-delay: 2.5s;
 }
 #g,
 #o {
@@ -75,24 +75,35 @@ main p {
 }
 #h,
 #p {
-  animation: move 2.5s linear infinite alternate backwards;
-  animation-delay: 3s;
+  animation: move 2.3s linear infinite alternate backwards;
+  animation-delay: 3.5s;
 }
 #f,
 #n {
-  animation: move 2.5s linear infinite alternate backwards;
+  animation: move-more 2.7s linear infinite alternate backwards;
   animation-delay: 3s;
 }
 #d,
 #l {
-  animation: move 1.5s linear infinite alternate forwards;
+  animation: move 1.7s linear infinite alternate forwards;
 }
 #b,
 #j {
-  animation: move 0.5s linear infinite alternate forwards;
+  animation: move-more 0.8s linear infinite alternate forwards;
 }
 
 @keyframes move {
+  100% {
+    transform: scale(3);
+  }
+  from {
+    background-color: var(--clr-black);
+  }
+  to {
+    background-color: hsla(0, 0%, 0% 0);
+  }
+}
+@keyframes move-more {
   100% {
     transform: scale(5);
   }
