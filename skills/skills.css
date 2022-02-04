@@ -19,7 +19,7 @@
 
 body {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   font-size: 2.5rem;
   background-color: var(--clr-black);
 }
@@ -37,9 +37,18 @@ main {
   align-items: center;
 }
 
+h1 {
+  font-size: 10vh;
+  color: var(--clr-black);
+  grid-area: 18 / 15 / 22 / 25;
+  background-color: hsla(0, 0%, 95%, 0.5);
+  padding: 20px;
+}
+
 main p {
-  font-family: var(--ff-libre);
-  min-width: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
 #a,
@@ -85,12 +94,12 @@ main p {
 
 @keyframes move {
   100% {
-    transform: scale(1.5);
+    transform: scale(5);
   }
   from {
-    color: var(--clr-black);
+    background-color: var(--clr-black);
   }
   to {
-    color: hsla(0, 0%, 0% 0);
+    background-color: hsla(0, 0%, 0% 0);
   }
 }

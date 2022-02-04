@@ -23,7 +23,7 @@ for (let i of ids) {
   let randomColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(
     Math.random() * 255
   )}, ${Math.floor(Math.random() * 255)})`;
-  i.style.color = randomColor;
+  i.style.backgroundColor = randomColor;
   i.style.gridArea = `${random1} / ${random2} / ${random1 + 10} / ${
     random2 + 10
   }`;
@@ -41,7 +41,7 @@ const colorChange = (element) => {
   let randomColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(
     Math.random() * 255
   )}, ${Math.floor(Math.random() * 255)})`;
-  element.style.color = randomColor;
+  element.style.backgroundColor = randomColor;
 };
 
 const iterationChange = (element) => {
