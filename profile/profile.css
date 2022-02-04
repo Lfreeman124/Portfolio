@@ -90,26 +90,26 @@ img {
   border-left: 1px solid var(--clr-black);
   border-right: 1px solid var(--clr-black);
   border-bottom: 1px solid var(--clr-black);
-  padding: 3rem;
+  padding: 5vh;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.5vh;
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 2vh;
   border-bottom: 1px solid var(--clr-black);
   z-index: 1;
 }
 
 h4 {
-  margin-top: 1rem;
-  font-size: 1.8rem;
+  margin-top: 1.5vh;
+  font-size: 1.8vh;
   font-weight: 400;
   z-index: 1;
 }
 
 .about p {
-  font-size: 1.5rem;
+  font-size: 1.8vh;
   padding-left: 2rem;
   font-weight: 300;
   z-index: 1;
