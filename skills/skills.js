@@ -19,7 +19,7 @@ let ids = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p];
 
 for (let i of ids) {
   let random1 = Math.floor(Math.random() * 40);
-  let random2 = Math.floor(Math.random() * 36);
+  let random2 = Math.floor(Math.random() * 40);
   let randomColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(
     Math.random() * 255
   )}, ${Math.floor(Math.random() * 255)})`;
@@ -31,7 +31,7 @@ for (let i of ids) {
 
 const move = (element) => {
   let random1 = Math.floor(Math.random() * 40);
-  let random2 = Math.floor(Math.random() * 36);
+  let random2 = Math.floor(Math.random() * 40);
   element.style.gridArea = `${random1} / ${random2} / ${random1 + 10} / ${
     random2 + 10
   }`;
