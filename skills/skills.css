@@ -53,43 +53,43 @@ main p {
 
 #a,
 #i {
-  animation: move 5s linear infinite alternate backwards;
+  animation: move 2.5s linear infinite alternate backwards;
   animation-delay: 1s;
 }
 
 #c,
 #k {
-  animation: move 4s linear infinite alternate backwards;
+  animation: move 2s linear infinite alternate backwards;
   animation-delay: 1s;
 }
 
 #e,
 #m {
-  animation: move 3s linear infinite alternate backwards;
+  animation: move 1.5s linear infinite alternate backwards;
   animation-delay: 2s;
 }
 #g,
 #o {
-  animation: move 2s linear infinite alternate backwards;
+  animation: move 1s linear infinite alternate backwards;
   animation-delay: 2s;
 }
 #h,
 #p {
-  animation: move 4.5s linear infinite alternate backwards;
+  animation: move 2.5s linear infinite alternate backwards;
   animation-delay: 3s;
 }
 #f,
 #n {
-  animation: move 3.5s linear infinite alternate backwards;
+  animation: move 2.5s linear infinite alternate backwards;
   animation-delay: 3s;
 }
 #d,
 #l {
-  animation: move 2.5s linear infinite alternate forwards;
+  animation: move 1.5s linear infinite alternate forwards;
 }
 #b,
 #j {
-  animation: move 1.5s linear infinite alternate forwards;
+  animation: move 0.5s linear infinite alternate forwards;
 }
 
 @keyframes move {
