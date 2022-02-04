@@ -64,11 +64,6 @@ main {
   margin-bottom: 1.5rem;
 }
 
-.hello p {
-  margin-left: 5px;
-  position: relative;
-  z-index: 5;
-}
 .hello h2 {
   font-size: 2rem;
   position: relative;
@@ -130,7 +125,6 @@ main {
   text-align: center;
   text-decoration: none;
 }
-
 .nav p {
   padding: 4rem;
   margin: auto;
