@@ -79,11 +79,11 @@ h2 {
 }
 
 img {
-  margin-top: 25px;
+  margin-top: 20px;
   margin-left: 30px;
   grid-area: 3 /4 / 10 / 15;
   padding: 2rem;
-  height: 200px;
+  height: 160px;
   position: absolute;
   z-index: 10;
   border: 2px solid var(--clr-black);
@@ -91,7 +91,7 @@ img {
 
 .about {
   background-color: var(--clr-yellow);
-  grid-area: 6 / 4 / 18 / 19;
+  grid-area: 6 / 4 / 20 / 19;
   border-left: 1px solid var(--clr-black);
   border-right: 1px solid var(--clr-black);
   border-bottom: 1px solid var(--clr-black);
@@ -99,9 +99,9 @@ img {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 400;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--clr-black);
   z-index: 1;

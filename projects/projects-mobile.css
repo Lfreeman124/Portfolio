@@ -81,7 +81,7 @@ body {
 
 .projects figure {
   width: 30rem;
-  height: 25rem;
+  height: 20rem;
   display: flex;
   flex-direction: column;
   margin: 2rem;
@@ -94,14 +94,14 @@ body {
 }
 
 .projects h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--clr-cactus);
   font-family: var(--ff-libre);
   text-decoration: underline;
 }
 
 .title {
-  height: 20%;
+  height: 15%;
   width: 100%;
 }
 
