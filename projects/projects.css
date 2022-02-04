@@ -144,3 +144,8 @@ figcaption {
   display: flex;
   align-items: center;
 }
+
+footer nav {
+  display: flex;
+  flex-direction: row;
+}
