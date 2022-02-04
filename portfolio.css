@@ -65,7 +65,7 @@ main {
   position: relative;
   z-index: 5;
   font-family: var(--ff-roboto);
-  margin-bottom: 3rem;
+  margin-bottom: 20%;
 }
 
 .hello p {
