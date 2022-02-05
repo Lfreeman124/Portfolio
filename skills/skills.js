@@ -24,8 +24,8 @@ for (let i of ids) {
     Math.random() * 255
   )}, ${Math.floor(Math.random() * 255)})`;
   i.style.backgroundColor = randomColor;
-  i.style.gridArea = `${random1} / ${random2} / ${random1 + 10} / ${
-    random2 + 10
+  i.style.gridArea = `${random1} / ${random2} / ${random1 + 1} / ${
+    random2 + 1
   }`;
 }
 
