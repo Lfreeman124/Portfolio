@@ -116,6 +116,11 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.mole img {
+  height:100%;
+  width:auto;
+  margin: auto;
+}
 
 figcaption {
   color: black;
