@@ -128,6 +128,15 @@ li {
   align-items: center;
 }
 
+li > a {
+  text-decoration: none;
+  color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .one {
   background-image: url(https://www.transparentpng.com/thumb/paint-brush/NNOb80-paint-brush-png-picture.png);
   background-size: 45% 100%;
@@ -140,6 +149,7 @@ li {
   background-repeat: no-repeat;
 }
 .three {
+  padding-top: 2rem;
   background-image: url(https://www.transparentpng.com/thumb/paint-brush/3yFkUZ-download-paint-brush-png.png);
   background-size: 35% 100%;
   background-repeat: no-repeat;
